@@ -1,0 +1,29 @@
+The codebase is implemented in C.  It was developed, debugged and tested using C and x86 SIMD instructions and
+cross compiled using clang-17 for WASM.   
+
+To build and run the development version of MSM use the following commands:
+   make x86simd
+   ./x86simd 128
+
+The expected result are:
+  09699DC758628CD2A1E79F10E4E80840E98D9FE6ECD5EB3DC9AC2EB05AB4F071
+  00248F4CBB09DF28FC1DCCD17CF461595A74D207CADFFE21858688DAF92BF17B
+
+This is a small size MSM.  For bigger MSMs, you would need to generate point and scalar datasets (points.hex
+and scalars.hex).  These files are quite large, so we have only included small samples in the repo.
+
+To build the WASM binary, please ensure clang-17 is installed and run:
+  make msm.wasm
+
+The clang-17 compilation appears to be deterministic, and sum msm.wasm returns 26483.
+
+We ran into one technical challenge during the development of the WASM version -- for simplicity and 
+cleanliness sake, we deciced not to use any pre-built multi-threading libraries, instead we rolled our 
+own based on built-in __atomic ops.  WASM C uses two stacks, the WASM stack, and a shadow stack for C 
+local variables that resides in WASM memory.  When we started working with multiple threads, we discovered 
+that the shadow stacks of the various threads were placed at the same memory locations and clobbered one
+another.  We eventually solved this by initializing the stack pointer to different regions of memory 
+depending on the thread ID.  See src/submission/worker.js.
+
+
+
