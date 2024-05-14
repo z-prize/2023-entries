@@ -1,0 +1,33 @@
+[package]
+name = "zprize-2023-submission-fpga"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[build-dependencies]
+cc = "^1.0.70"
+which = "^4.0"
+
+[dependencies]
+clap = { version = "4.5.3", features = ["derive"] }
+env_logger = "0.11.3"
+log = "0.4.21"
+
+ark-std = { version = "^0.3.0", default-features = false }
+ark-ec = { version = "^0.3.0", default-features = false }
+ark-ff = { version = "^0.3.0", default-features = false }
+ark-bn254  = { version = "0.3.0", default-features = false, features = [ "curve" ] }
+ark-bls12-381 = { version = "0.3.0", default-features = false, features = [ "curve" ] }
+ark-bls12-377 = { version = "0.3.0", default-features = false, features = [ "curve" ] }
+rand_chacha = "0.3.1"
+rand_core = "0.6.4"
+criterion = "0.5.1"
+rayon = "1.9.0"
+
+[features]
+cpu = []
+fpga = []
+
+[[bench]]
+name = "bench"
+harness = false
