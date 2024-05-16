@@ -1,0 +1,36 @@
+This directory contains the java code we used to test out the twisted edwards equations.
+
+To try the software run:
+   javac *.java
+   java tester
+   
+The tester runs a sequence of point additions both in Short Weierstrass form and in Twisted
+Edwards form.  Then it converts the results to check to make sure they match.  
+
+As was noted in the BLS12377 twisted edwards solution submitted by hardcaml in the 2022
+ZPrize, there are 5 points that satisfy the curve equation that can not be from Short Weierstrass
+form to Twisted Edwards form.  Here we present all 5 points:
+
+  pt1 = (x, y) = (0x17b62f01197dc4c6cf996f256d489ac9333ccbfe8c0adeaef1096c9bdf2e3d8e89faab521e38583e9033db52f6523ff, 
+                  0x07d6ff5c7338b952b42317a0f6cc62ed2695adb23e585fc0ac765e8156ff4c12780ac5b0abb46589612e0b472e93b5f)
+                  
+  pt2 = (x, y) = (0x17b62f01197dc4c6cf996f256d489ac9333ccbfe8c0adeaef1096c9bdf2e3d8e89faab521e38583e9033db52f6523ff,
+                  0x130ca50509185559af8d4465d34830c47b97f17dd0f8d93142bfc47a499533eef8ab0e92544b9a7eef5df4b8d16c4a2)
+                  
+  pt3 = (x, y) = (0x1ae3a4617c510eac63b05c06ca1493b1a22d9f300f5138f1ef3622fba094800170b5d44300000008508c00000000000, 0x0)
+  
+  pt4 = (x, y) = (0x9b3af05dd14f6ec619aaf7d34594aabc5ed1347970dec00452217cc900000008508c00000000002, 0x0)
+  
+  pt5 = (x, y) = (0x1ae3a4617c510eabc8756ba8f8c524eb8882a75cc9bc8e359064ee822fb5bffd1e94577a00000000000000000000000, 0x0)
+
+The tester code check the following properties of each of the 5 points:
+
+   1)  The point satisfied the curve equation  --   y^2 = x^3 + 1
+   2)  The Mapping from Short Weierstrass form to twisted edwards form fails
+   3)  Given P=(x, y) check P^K!=Infinity, where K is the curve order (0x12ab655e9a2ca55660b44d1e5c37b00159aa76fed00000010a11800000000001). 
+   
+The last property is especially important.  Since all points, P, where P <- G1, have the property that P^K==Infinity, and since
+none of the 5 points that can't be mapped have that property, we can be sure that none of the 5 points are in G1.  Therefore we
+never have to worry about special treatment of those 5 points, or that we'll hit one of the points in a bucket sum computation.
+
+In other words, it's completely safe for us to use the translation to Twisted Edwards space.  This hadn't been shown by hardcaml.
