@@ -1,0 +1,27 @@
+[package]
+name = "zprize"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+snarkvm-algorithms = { git = "https://github.com/AleoHQ/snarkVM", branch = "zprize_2023" }
+snarkvm-circuit = { git = "https://github.com/AleoHQ/snarkVM", branch = "zprize_2023" }
+snarkvm-console = { git = "https://github.com/AleoHQ/snarkVM", branch = "zprize_2023", features = [
+    "types",
+] }
+snarkvm-curves = { git = "https://github.com/AleoHQ/snarkVM", branch = "zprize_2023" }
+snarkvm-circuit-environment = { git = "https://github.com/AleoHQ/snarkVM", branch = "zprize_2023" }
+snarkvm-console-network = { git = "https://github.com/AleoHQ/snarkVM", branch = "zprize_2023" }
+snarkvm-utilities = { git = "https://github.com/AleoHQ/snarkVM", branch = "zprize_2023" }
+
+rand = "0.8.5"
+k256 = { version = "0.13", features = ["ecdsa"] }
+ecdsa = { version = "0.16", features = ["signing", "verifying"] }
+sha3 = "0.10"
+
+[dev-dependencies]
+criterion = { version = "0.4", features = ["html_reports"] }
+
+[[bench]]
+name = "bench"
+harness = false
