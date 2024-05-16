@@ -1,0 +1,5 @@
+# ZPRIZE-23-Prize 1 Summary
+The ZPrize'23 Prize 1 consists of two sequential prizes:
+  1. MSM competition (Prize 1a): The goal is to develop the most efficient Multi-Scalar Multiplication implementation on FPGAs or GPUs that is compatible with both BLS12-377 AND BLS12-381 curves. The deadline for the submission of this competition is Febraray 1, 2024. The total prize is 500k Aleo credits, with "winner takes all" policy.
+
+  2. End-to-End competition (Prize 1b): The goal is to build the most energy-efficient end-to-end zero-knowledge proof implementation for the Poseidon-Merkel tree circuit, on FPGAs or GPUs. The competition starts on February 15th 2024 and ends on May 15th 2024. The participants are encouraged to build their solutions using existing techniques, such as the MSM results from Prize 1b. The total prize is $500k USD, with "split the award" policy. 
