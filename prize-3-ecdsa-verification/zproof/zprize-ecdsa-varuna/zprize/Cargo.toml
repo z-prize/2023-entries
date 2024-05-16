@@ -1,0 +1,71 @@
+[package]
+name = "zprize"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+snarkvm-algorithms = { git = "https://github.com/AleoHQ/snarkVM", branch = "zprize_2023" }
+snarkvm-circuit = { git = "https://github.com/AleoHQ/snarkVM", branch = "zprize_2023" }
+snarkvm-console = { git = "https://github.com/AleoHQ/snarkVM", branch = "zprize_2023", features = [
+    "types",
+] }
+snarkvm-curves = { git = "https://github.com/AleoHQ/snarkVM", branch = "zprize_2023" }
+snarkvm-circuit-environment = { git = "https://github.com/AleoHQ/snarkVM", branch = "zprize_2023" }
+snarkvm-console-network = { git = "https://github.com/AleoHQ/snarkVM", branch = "zprize_2023" }
+snarkvm-utilities = { git = "https://github.com/AleoHQ/snarkVM", branch = "zprize_2023" }
+snarkvm-parameters = { git = "https://github.com/AleoHQ/snarkVM", branch = "zprize_2023" }
+plonky2_evm = { path = "../evm/evm" }
+rand = "0.8.5"
+k256 = { version = "0.13", features = ["ecdsa"] }
+ecdsa = { version = "0.16", features = ["signing", "verifying"] }
+sha3 = "0.10"
+
+serde = "1.0"
+serde_cbor = "0.11.2"
+serde_json = "1"
+anyhow = "1.0.79"
+hex = "0.4.3"
+aleo-std-profiler = { version = "0.1.15", features = ["profiler"]} # enable "profiler" feature for this crate, which is depended by snarkVM
+
+tempfile = "3.9.0"
+scopeguard = "1.2.0"
+num-bigint = "0.4.4"
+plonky2_ecdsa = {path = "../plonky2-ecdsa" }
+plonky2_01 = { git = "ssh://git@github.com/zproof/evm.git", branch = "v012",  package = "plonky2" }
+rayon = "1.8"
+once_cell = "1.19.0"
+time = {version = "0.3", features = ["formatting","local-offset","macros"]}
+env_logger = "0.10"
+[patch."https://github.com/AleoHQ/snarkVM"]
+snarkvm-algorithms = { path = '../snarkVM/algorithms' }
+snarkvm-circuit = { path = '../snarkVM/circuit' }
+snarkvm-console = { path = '../snarkVM/console' }
+snarkvm-curves = { path = '../snarkVM/curves' }
+snarkvm-circuit-environment = { path = '../snarkVM/circuit/environment' }
+snarkvm-console-network = { path = '../snarkVM/console/network' }
+snarkvm-utilities = { path = '../snarkVM/utilities' }
+snarkvm-parameters = { path = '../snarkVM/parameters' }
+
+[patch.crates-io]
+plonky2 = { git = "ssh://git@github.com/zproof/evm.git", branch = "v012" }
+aleo-std-profiler = { path = '../aleo-std/profiler' }
+
+[dev-dependencies]
+criterion = { version = "0.4", features = ["html_reports"] }
+
+[[bench]]
+name = "bench"
+harness = false
+
+[profile.test]
+opt-level = 3
+debug = true
+split-debuginfo = '...'  # Platform-specific.
+strip = "none"
+debug-assertions = true
+overflow-checks = false
+lto = false
+panic = 'unwind'
+incremental = false
+codegen-units = 16
+rpath = false

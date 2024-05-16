@@ -1,0 +1,52 @@
+[package]
+name = "zprize"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+snarkvm-algorithms = { git = "https://github.com/MengLing-L/snarkVM" }
+snarkvm-circuit = { git = "https://github.com/MengLing-L/snarkVM"}
+snarkvm-console = { git = "https://github.com/MengLing-L/snarkVM", features = [
+    "types",
+] }
+snarkvm-curves = { git = "https://github.com/MengLing-L/snarkVM" }
+snarkvm-circuit-environment = { git = "https://github.com/MengLing-L/snarkVM"}
+snarkvm-console-network = { git = "https://github.com/MengLing-L/snarkVM" }
+snarkvm-console-algorithms = { git = "https://github.com/MengLing-L/snarkVM" }
+snarkvm-utilities = { git = "https://github.com/MengLing-L/snarkVM" }
+
+rand = "0.8.5" 
+k256 = { version = "0.13", features = ["ecdsa","expose-field"] }
+ecdsa = { version = "0.16", features = ["signing", "verifying"] }
+sha3 = "0.10"
+num-bigint = "0.4.4"
+num-prime = "0.4"
+rust-gmp = { version = "0.5.0"}
+
+[dependencies.lazy_static]
+version = "1.4"
+
+[dependencies.tiny-keccak]
+version = "2"
+features = [ "keccak", "sha3" ]
+
+[dependencies.anyhow]
+version = "1.0"
+
+[dependencies.aleo-std]
+version = "0.1.18"
+default-features = false
+
+[dev-dependencies]
+criterion = { version = "0.4", features = ["html_reports"] }
+
+[dependencies.indexmap]
+version = "2.0.0"
+
+[[bench]]
+name = "bench"
+harness = false
+
+
+
+
