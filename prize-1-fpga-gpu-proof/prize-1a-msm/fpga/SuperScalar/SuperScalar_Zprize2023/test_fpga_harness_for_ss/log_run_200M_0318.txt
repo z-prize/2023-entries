@@ -1,0 +1,130 @@
+Autocomplete not enabled for XRT tools
+XILINX_XRT        : /opt/xilinx/xrt
+PATH              : /opt/xilinx/xrt/bin:.:/tools/chin/scripts/bin:/tools/Xilinx/Vitis_HLS/2023.2/bin:/tools/Xilinx/Model_Composer/2023.2/bin:/tools/Xilinx/Vitis/2023.2/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2023.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2023.2/aietools/bin:/tools/Xilinx/Vitis/2023.2/gnu/riscv/lin/riscv64-unknown-elf/bin:/tools/Xilinx/Vivado/2023.2/bin:/tools/Xilinx/DocNav:/tools/Xilinx/Vitis_HLS/2023.2/bin:/tools/Xilinx/Model_Composer/2023.2/bin:/tools/Xilinx/Vitis/2023.2/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2023.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2023.2/aietools/bin:/tools/Xilinx/Vitis/2023.2/gnu/riscv/lin/riscv64-unknown-elf/bin:/tools/Xilinx/Vivado/2023.2/bin:/tools/Xilinx/DocNav:/home/zzz/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/bin/remote-cli:.:/tools/chin/scripts/bin:/tools/Xilinx/Vitis_HLS/2023.2/bin:/tools/Xilinx/Model_Composer/2023.2/bin:/tools/Xilinx/Vitis/2023.2/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2023.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2023.2/aietools/bin:/tools/Xilinx/Vitis/2023.2/gnu/riscv/lin/riscv64-unknown-elf/bin:/tools/Xilinx/Vivado/2023.2/bin:/tools/Xilinx/DocNav:/tools/Xilinx/Vitis_HLS/2023.2/bin:/tools/Xilinx/Model_Composer/2023.2/bin:/tools/Xilinx/Vitis/2023.2/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2023.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2023.2/aietools/bin:/tools/Xilinx/Vitis/2023.2/gnu/riscv/lin/riscv64-unknown-elf/bin:/tools/Xilinx/Vivado/2023.2/bin:/tools/Xilinx/DocNav:.:/tools/chin/scripts/bin:/tools/Xilinx/Vitis_HLS/2023.2/bin:/tools/Xilinx/Model_Composer/2023.2/bin:/tools/Xilinx/Vitis/2023.2/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2023.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2023.2/aietools/bin:/tools/Xilinx/Vitis/2023.2/gnu/riscv/lin/riscv64-unknown-elf/bin:/tools/Xilinx/Vivado/2023.2/bin:/tools/Xilinx/DocNav:/tools/Xilinx/Vitis_HLS/2023.2/bin:/tools/Xilinx/Model_Composer/2023.2/bin:/tools/Xilinx/Vitis/2023.2/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2023.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2023.2/aietools/bin:/tools/Xilinx/Vitis/2023.2/gnu/riscv/lin/riscv64-unknown-elf/bin:/tools/Xilinx/Vivado/2023.2/bin:/tools/Xilinx/DocNav:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+LD_LIBRARY_PATH   : /opt/xilinx/xrt/lib:/lib64:/usr/lib32/:/usr/libx32/:/usr/lib/x86_64-linux-gnu/:/home/eda/synopsys/syn_N-2017.09-SP3/lib/linux64:/home/eda/synopsys/verdi_202206_SP1/share/PLI/lib/LINUX64:/home/eda/synopsys/verdi_202206_SP1/share/PLI/VCS/LINUX64
+PYTHONPATH        : /opt/xilinx/xrt/python
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+Loading testdata from data/k24-01
+test msm_correctness has been running for over 60 seconds
+Loading testdata took Ok(61.281556562s)
+ ffi multi_scalar_mult_init_for_ss points len 16777216
+
+
+Instantiating msm driver for 16777216 points
+      [HOST] k: 24, msm_size: 16777216, bit_s: 16, groups_num_each_batch: 16, bucket_num: 32768
+      [HOST] group_batches_size: 3, group_batches_num: 6, bases_data_channels_num: 4
+      [HOST][msm_init_for_ss] Driver init
+      [HOST][init] Convert SW -> EXED points...
+      [HOST][init] Precompute EXED points...
+      [HOST][init] Split EXED points for FPGA...
+      [HOST][msm_init_for_ss] Driver load_xclbin
+Loading xclbin=../fpga_msm_dev/host/src/krnl_msm_rtl/prebuild_xclbin/zprize_msm_200M_0318.xclbinP”/´Q
+Loading XCLBIN=../fpga_msm_dev/host/src/krnl_msm_rtl/prebuild_xclbin/zprize_msm_200M_0318.xclbin
+Found Platform
+Platform Name: Xilinx
+INFO: Reading ../fpga_msm_dev/host/src/krnl_msm_rtl/prebuild_xclbin/zprize_msm_200M_0318.xclbin
+Loading: '../fpga_msm_dev/host/src/krnl_msm_rtl/prebuild_xclbin/zprize_msm_200M_0318.xclbin'
+Trying to program device[0]: xilinx_u250_gen3x16_xdma_shell_4_1
+ffi multi_scalar_mult_init took Ok(57.074587565s)
+Running msm test for 10 rounds
+Running multi_scalar_mult took Ok(2.112573185s) (round = 0)
+Running multi_scalar_mult took Ok(1.938367485s) (round = 1)
+Running multi_scalar_mult took Ok(1.9393565s) (round = 2)
+Running multi_scalar_mult took Ok(1.940970983s) (round = 3)
+Running multi_scalar_mult took Ok(1.939739885s) (round = 4)
+Running multi_scalar_mult took Ok(1.939675531s) (round = 5)
+Running multi_scalar_mult took Ok(1.938879632s) (round = 6)
+Running multi_scalar_mult took Ok(1.94077721s) (round = 7)
+Running multi_scalar_mult took Ok(1.939480817s) (round = 8)
+Running multi_scalar_mult took Ok(1.940226983s) (round = 9)
+test msm_correctness ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 138.17s
+
+Device[0]: program successful!
+      [HOST][run_msm] all msm_batches_num: 4, groups_num_all: 64, group_batches_size: 3, group_batches_num: 22
+      [HOST][post_worker_thread] launch pthread
+      [HOST][pre_worker_thread] launch pthread
+      [HOST][run_msm] Main thread received notification --->
+      [HOST][run_msm] Run msm completed
+
+
+      [HOST][run_msm] all msm_batches_num: 4, groups_num_all: 64, group_batches_size: 3, group_batches_num: 22
+      [HOST][post_worker_thread] launch pthread
+      [HOST][pre_worker_thread] launch pthread
+      [HOST][run_msm] Main thread received notification --->
+      [HOST][run_msm] Run msm completed
+
+
+      [HOST][run_msm] all msm_batches_num: 4, groups_num_all: 64, group_batches_size: 3, group_batches_num: 22
+      [HOST][post_worker_thread] launch pthread
+      [HOST][pre_worker_thread] launch pthread
+      [HOST][run_msm] Main thread received notification --->
+      [HOST][run_msm] Run msm completed
+
+
+      [HOST][run_msm] all msm_batches_num: 4, groups_num_all: 64, group_batches_size: 3, group_batches_num: 22
+      [HOST][pre_worker_thread] launch pthread
+      [HOST][post_worker_thread] launch pthread
+      [HOST][run_msm] Main thread received notification --->
+      [HOST][run_msm] Run msm completed
+
+
+      [HOST][run_msm] all msm_batches_num: 4, groups_num_all: 64, group_batches_size: 3, group_batches_num: 22
+      [HOST][post_worker_thread] launch pthread
+      [HOST][pre_worker_thread] launch pthread
+      [HOST][run_msm] Main thread received notification --->
+      [HOST][run_msm] Run msm completed
+
+
+      [HOST][run_msm] all msm_batches_num: 4, groups_num_all: 64, group_batches_size: 3, group_batches_num: 22
+      [HOST][post_worker_thread] launch pthread
+      [HOST][pre_worker_thread] launch pthread
+      [HOST][run_msm] Main thread received notification --->
+      [HOST][run_msm] Run msm completed
+
+
+      [HOST][run_msm] all msm_batches_num: 4, groups_num_all: 64, group_batches_size: 3, group_batches_num: 22
+      [HOST][post_worker_thread] launch pthread
+      [HOST][pre_worker_thread] launch pthread
+      [HOST][run_msm] Main thread received notification --->
+      [HOST][run_msm] Run msm completed
+
+
+      [HOST][run_msm] all msm_batches_num: 4, groups_num_all: 64, group_batches_size: 3, group_batches_num: 22
+      [HOST][post_worker_thread] launch pthread
+      [HOST][pre_worker_thread] launch pthread
+      [HOST][run_msm] Main thread received notification --->
+      [HOST][run_msm] Run msm completed
+
+
+      [HOST][run_msm] all msm_batches_num: 4, groups_num_all: 64, group_batches_size: 3, group_batches_num: 22
+      [HOST][post_worker_thread] launch pthread
+      [HOST][pre_worker_thread] launch pthread
+      [HOST][run_msm] Main thread received notification --->
+      [HOST][run_msm] Run msm completed
+
+
+      [HOST][run_msm] all msm_batches_num: 4, groups_num_all: 64, group_batches_size: 3, group_batches_num: 22
+      [HOST][post_worker_thread] launch pthread
+      [HOST][pre_worker_thread] launch pthread
+      [HOST][run_msm] Main thread received notification --->
+      [HOST][run_msm] Run msm completed
+
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
