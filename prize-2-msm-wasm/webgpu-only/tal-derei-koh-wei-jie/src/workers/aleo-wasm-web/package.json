@@ -1,0 +1,32 @@
+{
+  "name": "aleo-wasm-web",
+  "collaborators": [
+    "The Aleo Team <hello@aleo.org>"
+  ],
+  "description": "WebAssembly based toolkit for developing zero knowledge applications with Aleo",
+  "version": "0.5.1",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AleoHQ/sdk"
+  },
+  "files": [
+    "aleo_wasm_bg.wasm",
+    "aleo_wasm.js",
+    "aleo_wasm.d.ts",
+    "LICENSE.md"
+  ],
+  "module": "aleo_wasm.js",
+  "homepage": "https://aleo.org",
+  "types": "aleo_wasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ],
+  "keywords": [
+    "aleo",
+    "cryptography",
+    "blockchain",
+    "decentralized",
+    "zero-knowledge"
+  ]
+}
