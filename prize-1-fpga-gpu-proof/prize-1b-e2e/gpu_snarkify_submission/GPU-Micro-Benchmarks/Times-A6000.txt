@@ -1,0 +1,10 @@
+coset-ntt-25: min=14.231 max=14.578 ave=14.452
+ntt-25: min=13.125 max=14.265 ave=13.348
+ntt-22: min=1.114 max=1.155 ave=1.129
+intt-22: min=1.137 max=1.409 ave=1.231
+polynomial-divide-22: min=0.581 max=0.767 ave=0.689
+polynomial-evaluate-22: min=0.161 max=0.163 ave=0.161
+polynomial-evaluate-25: min=1.179 max=1.181 ave=1.179
+batch-invert-22: min=0.767 max=0.785 ave=0.774
+msm-22: min=25.955 max=30.710 ave=28.395
+
