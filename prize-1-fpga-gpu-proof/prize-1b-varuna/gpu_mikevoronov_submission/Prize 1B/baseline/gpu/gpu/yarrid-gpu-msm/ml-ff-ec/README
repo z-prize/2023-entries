@@ -1,0 +1,8 @@
+This is Matter Labs FF and EC curves directory from the 2022 GPU Z-Prize.
+We have made a small number of changes, in order to reuse it here:
+  1)  we have reorganized the includes
+  2)  we have removed all __host__ functions
+  3)  we have moved ff_config and msm_kernels in ../MatterLabs.cuh
+
+Please note, these files did not have any copyright notices.  We have neither
+removed copyrights nor added them.
