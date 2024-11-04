@@ -1,0 +1,10 @@
+# nvcc -c cub.cu -o cub.o && ar rcs libcub.a cub.o
+# nvcc -lib cub.cu -o libcub.a
+
+./bindgen cub.h -o ../api/cub.rs
+
+
+
+#g++ cub.o -fPIC -shared -o libcub.so
+
+#  nvcc -o libcub.so -shared -Xcompiler -fPIC cub.cu  
